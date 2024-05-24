@@ -47,11 +47,12 @@ def whileOpciones(valor_uno: int, valor_dos: int):
                 return f"\nEl resultado de {valor_uno}-{valor_dos} es: {resta(valor_uno,valor_dos)}\n" 
             case "dividir" | "3":
                 if valor_dos == 0:
-                    return f"\nNo es posible dividir por cero\n" 
-                    # respuesta = input("No se puede dividir por 0\n¿Desea cambiar el 2do valor? [Y/N]\n")
-                    # if respuesta.lower() == "y":
-                    #     valor_dos = numero_distinto_a_cero()
-                    #     return f"\nEl resultado de {valor_uno}/{valor_dos} es: {dividir(valor_uno,valor_dos)}\n" 
+                    respuesta = input("No se puede dividir por 0\n¿Desea cambiar el 2do valor? [Y/N]\n")
+                    if respuesta.lower() == "y":
+                        valor_dos = numero_distinto_a_cero()
+                        return f"\nEl resultado de {valor_uno}/{valor_dos} es: {dividir(valor_uno,valor_dos)}\n" 
+                    else:
+                        return "\nNo se puede dividir por 0\n"
                 else:
                     return f"\nEl resultado de {valor_uno}/{valor_dos} es: {dividir(valor_uno,valor_dos)}\n" 
             case "multiplicar" | "4":

@@ -4,7 +4,7 @@ def ingresar_validar_numero()-> int:
         numero = input("ERROR re-ingrese un numero : ")
     return int(numero)
 
-def numero_distinto_a_cero():
+def numero_distinto_a_cero()-> int:
     numero = ingresar_validar_numero()
     while numero == 0:
         print("Por favor, ingrese un valor distinto a 0")
@@ -23,13 +23,13 @@ def dividir(valor_uno: int, valor_dos: int)-> float:
 def multiplicar(valor_uno: int, valor_dos: int)-> int:
     return valor_uno * valor_dos
 
-def factorial(numero):
+def factorial(numero: int)-> int:
     if numero == 0 or numero == 1:
         return 1
     else:
         return numero * factorial(numero - 1)
 
-def menuOperaciones():
+def menuOperaciones() -> None:
     print('''\n1- Sumar
 2- Restar
 3- Dividir
@@ -37,7 +37,7 @@ def menuOperaciones():
 5- Factorial\n''')
     return
 
-def whileOperaciones(valor_uno: int, valor_dos: int):
+def whileOperaciones(valor_uno: int, valor_dos: int) -> str:
     while True:
         opcion = input("\nIngrese un opcion : \n")
         match opcion.lower():

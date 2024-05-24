@@ -37,7 +37,7 @@ def menuOperaciones():
 5- Factorial\n''')
     return
 
-def whileOpciones(valor_uno: int, valor_dos: int):
+def whileOperaciones(valor_uno: int, valor_dos: int):
     while True:
         opcion = input("\nIngrese un opcion : \n")
         match opcion.lower():

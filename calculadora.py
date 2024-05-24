@@ -43,7 +43,7 @@ while True:
         case "c":
             if segundo_paso:
                 menuOperaciones()
-                resultado = whileOpciones(numero_uno,numero_dos)
+                resultado = whileOperaciones(numero_uno,numero_dos)
                 tercer_paso = True
             else:
                 print("\nDebe ingresar ambos valores\n")
